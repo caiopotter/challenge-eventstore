@@ -14,13 +14,12 @@ public class EventIteratorMain implements EventIterator {
 	
 	@Override
 	public void close() throws Exception {
-		// TODO Auto-generated method stub
-
+		System.out.println("Closing resource");
 	}
 
 	@Override
 	public boolean moveNext() {
-		if(this.iterator.hasNext()) {
+		if(iterator.hasNext()) {
 			currentEvent =  iterator.next().getValue();
 			return true;
 		}
@@ -39,11 +38,6 @@ public class EventIteratorMain implements EventIterator {
 	public void remove() {
 		iterator.remove();
 
-	}
-
-	@Override
-	public void updateIterator(Set<Entry<Long, Event>> entrySet) {
-		this.iterator = entrySet.iterator();
 	}
 
 }

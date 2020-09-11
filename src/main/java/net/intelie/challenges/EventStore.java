@@ -35,5 +35,4 @@ public interface EventStore {
      */
     EventIterator query(String type, long startTime, long endTime);
     
-    void printAll();
 }

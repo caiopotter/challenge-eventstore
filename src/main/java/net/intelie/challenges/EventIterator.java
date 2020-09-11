@@ -1,8 +1,5 @@
 package net.intelie.challenges;
 
-import java.util.Map.Entry;
-import java.util.Set;
-
 /**
  * An iterator over an event collection.
  */
@@ -31,5 +28,4 @@ public interface EventIterator extends AutoCloseable {
      */
     void remove();
 
-    void updateIterator(Set<Entry<Long, Event>> entrySet);
 }

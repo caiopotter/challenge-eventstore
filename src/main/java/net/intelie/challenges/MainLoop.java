@@ -19,11 +19,13 @@ public class MainLoop {
 			System.out.println("1 para trazer o próximo item");
 			option = sc.nextInt();
 			if(option == 1) {
-				main.printAll();
+				main.removeAll("Even2t");
 			}else if(option == 2) {
 				main.removeAll("Event");
 			}else if(option == 3) {
 				EventIterator query = main.query("Event", 3, 7);
+			}else if(option == 4) {
+				main.insert(new Event("Event", 9));
 			}
 		}
 		sc.close();
