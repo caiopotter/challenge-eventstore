@@ -28,10 +28,7 @@ public class EventIteratorMain implements EventIterator {
 
 	@Override
 	public Event current() {
-		if(currentEvent != null) {
-			return currentEvent;
-		}
-		return null;
+		return currentEvent;
 	}
 
 	@Override
